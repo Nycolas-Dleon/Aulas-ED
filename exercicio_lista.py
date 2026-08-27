@@ -86,8 +86,8 @@ class Lista:
         return self.__dados
 
 def esvaziar_lista(lista):
-    lista = Lista(10)
-    return lista
+    for i in range(lista.tamanho()):
+        lista.retirar(0)
 
 lista = Lista(10)
 
@@ -152,4 +152,3 @@ while True:
         elif opcao == 10:
             lista = esvaziar_lista(lista)
             print(lista)
-
